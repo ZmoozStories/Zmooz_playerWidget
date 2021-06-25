@@ -6,7 +6,7 @@ var resApi = []
 
 // To be remplaced with prod values
 const apiEndpoint = 'https://api-v2.zmooz.com/portal/stories?filter%5Blimit%5D='+limit+'&filter%5Boffset%5D=0&filter%5Border%5D%5B0%5D=lastPublishedAt%20desc&filter%5Bwhere%5D%5BchannelId%5D='+id+'&filter%5Bwhere%5D%5BaccessType%5D=1&filter%5Bwhere%5D%5BchannelStructure%5D=1'
-//Subdomain of "aufeminin, needs to be updated, with the brand prod stories location"
+//Subdomain, needs to be updated, with the brand prod stories location"
 const domain = "YOUR DOMAIN";
 // Main widget function pulling data from the api once the player is ready
 if (player.isReady) {
