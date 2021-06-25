@@ -1,14 +1,13 @@
 const lightboxEl = document.querySelector(".lightbox");
 const player = document.body.querySelector("amp-story-player");
 var limit = "4"
-var id = "1573"
+var id = "Your ID"
 var resApi = []
 
 // To be remplaced with prod values
-const apiEndpoint = 'https://api-v2.zmooz.com/portal/stories?filter%5Blimit%5D='+limit+'&filter%5Boffset%5D=0&filter%5Border%5D%5B0%5D=lastPublishedAt%20desc&filter%5Bwhere%5D%5BchannelId%5D=1573&filter%5Bwhere%5D%5BaccessType%5D=1&filter%5Bwhere%5D%5BchannelStructure%5D=1'
+const apiEndpoint = 'https://api-v2.zmooz.com/portal/stories?filter%5Blimit%5D='+limit+'&filter%5Boffset%5D=0&filter%5Border%5D%5B0%5D=lastPublishedAt%20desc&filter%5Bwhere%5D%5BchannelId%5D='+id+'&filter%5Bwhere%5D%5BaccessType%5D=1&filter%5Bwhere%5D%5BchannelStructure%5D=1'
 //Subdomain of "aufeminin, needs to be updated, with the brand prod stories location"
-const domain = "https://stories.aufeminin.com";
-// const domain = "YOUR DOMAIN";
+const domain = "YOUR DOMAIN";
 // Main widget function pulling data from the api once the player is ready
 if (player.isReady) {
   get_api_data(apiEndpoint);
